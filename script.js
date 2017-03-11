@@ -29,7 +29,7 @@ var characters =
     },
     "special":[
       "You lose 2 points if you are rejected, and lose 3 points if you reject your date",
-      "You gain +1 point for each time you use the word “Hashtag” (Max 5)"
+      "You gain +1 point for each time you use the word “Hashtag” (Max 3)"
     ]
   },{
     "icon":"‍🤓",
@@ -63,7 +63,7 @@ var characters =
     ]
   },{
     "icon":"‍🤦",
-    "stats":{
+    "stats": {
       "🎓":[+0,+0],
       "💪":[+1,+1],
       "👔":[+1,+2],
@@ -74,23 +74,53 @@ var characters =
     },
     "special":[
       "You lose 4 points if you reject your date",
-      "You gain 1 point each time you mention your ex (Max 5)",
+      "You gain 1 point each time you mention your ex (Max 3)",
       "If you are rejected, you draw a single from the deck and go home with them."
     ]
   },{
     "icon":"‍☠️",
-    "stats":{
-      "🎓":[+1,+2],
-      "💪":[ 0,+1],
-      "👔":[-2,-2],
-      "🥂":[ 0,+1],
-      "💸":[-1,-1],
-      "💘":[-1,-1],
-      "👼":[ 0,-1]
+    "stats": {
+      "🎓": [+1,+2],
+      "💪": [ 0,+1],
+      "👔": [-2,-2],
+      "🥂": [ 0,+1],
+      "💸": [-1,-1],
+      "💘": [-1,-1],
+      "👼": [ 0,-1]
     },
-    "special":[
+    "special": [
       "You lose 3 points if you reject your date, but *gain* 3 points if you are rejected",
       "You gain 1 point each time you roll your eyes (Max 3)"
+    ]
+  },{
+    "icon":"‍😘",
+    "stats": {
+      "🎓": [ 0,+1],
+      "💪": [ 0,+2],
+      "👔": [ 0,+1],
+      "🥂": [+1,+1],
+      "💸": [ 0,+1],
+      "💘": [+1,+1],
+      "👼": [-1,+1]
+    },
+    "special": [
+      "You lose 3 points if you are rejected, and lose 5 points if you reject your date",
+      "You gain +1 point for each time you wink (Max 3)"
+    ]
+  },{
+    "icon":"‍💃",
+    "stats": {
+      "🎓": [-2,+1],
+      "💪": [+2,+2],
+      "👔": [ 0,+2],
+      "🥂": [+1,+1],
+      "💸": [-1,+2],
+      "💘": [+1,+2],
+      "👼": [ 0,0]
+    },
+    "special": [
+      "You lose 3 points if you are rejected, and lose 5 points if you reject your date",
+      "You gain +1 point for each time you contradict yourself (Max 4)"
     ]
   }
 ]
