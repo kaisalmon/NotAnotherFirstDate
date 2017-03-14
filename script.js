@@ -122,8 +122,52 @@ var characters =
       "You lose 3 points if you are rejected, and lose 5 points if you reject your date",
       "You gain +1 point for each time you contradict yourself (Max 4)"
     ]
-  }
-]
+  },{
+    "icon":"‍🖖",
+    "stats": {
+      "🎓": [+2,+2],
+      "💪": [-2, 0],
+      "👔": [-1,+1],
+      "🥂": [-2,-2],
+      "💸": [+2, 0],
+      "💘": [-1,-1],
+      "👼": [ 0, 0]
+    },
+    "special": [
+      "You lose 0 points if you are rejected, and lose 3 points if you reject your date",
+      "You gain 4 points if the date ends without you using the words “Like”, “Feel”, “Enjoy”, “Love” or “Hate”"
+    ]
+  },{
+    "icon":"‍🕶️",
+    "stats": {
+      "🎓": [-1,-1],
+      "💪": [+1,+2],
+      "👔": [+2,+2],
+      "🥂": [+1,+2],
+      "💸": [+1,-1],
+      "💘": [+2,+2],
+      "👼": [ 0,+1]
+    },
+    "special": [
+      "You lose 3 points if you are rejected, and lose 5 points if you reject your date",
+      "You gain 5 points if the date ends without you using filler words such as “Like”, “Um”, “Erhm”"
+    ]
+  },{
+    "icon":"‍🙏",
+    "stats": {
+      "🎓": [ 0,-1],
+      "💪": [ 0,+1],
+      "👔": [+1,+2],
+      "🥂": [-2,-2],
+      "💸": [+1,+2],
+      "💘": [-1,+1],
+      "👼": [+2,+2]
+    },
+    "special": [
+      "You lose 3 points if you are rejected, and lose 5 points if you reject your date",
+      "You gain 2 points if the date ends without you using curse words such as “God”, “Jesus”, “Damn”, or any swear words"
+    ]
+  }]
 $(document).ready(function(){
   for(i in characters)
     render_character(characters[i]).appendTo('body');
@@ -136,6 +180,11 @@ $(document).ready(function(){
 
 render_character = function(chara){
   var $card = $("<div/>").addClass("character");
+
+  $card.append($("<div/>").addClass("background"));
+
+  for(var i = 0; i < 60; i++)
+      $card.find(".background").append(chara.icon);
 
   $card.append($("<div/>").addClass("icon").text(chara.icon));
 
