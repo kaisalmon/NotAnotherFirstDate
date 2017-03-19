@@ -2,6 +2,18 @@
 	box-sizing: border-box;
 }
 
+img.emojione{
+	filter:
+	drop-shadow( 1px  0px 0px rgba(0,0,0,0.4))
+	drop-shadow( 1px  1px 0px rgba(0,0,0,0.4))
+	drop-shadow( 1px -1px 0px rgba(0,0,0,0.4))
+	drop-shadow(-1px  0px 0px rgba(0,0,0,0.4))
+	drop-shadow(-1px  1px 0px rgba(0,0,0,0.4))
+	drop-shadow(-1px -1px 0px rgba(0,0,0,0.4))
+	drop-shadow( 0px  1px 0px rgba(0,0,0,0.4))
+	drop-shadow( 0px -1px 0px rgba(0,0,0,0.4))
+}
+
 .character{
 	display: inline-block;
 	font-family: 'Supermercado One', cursive;
@@ -68,6 +80,7 @@
 	display: inline-block;
 	font-weight: bold;
 	text-align: center;
+	height:0;
 }
 .character .stats .pos{
 	color:green;
@@ -150,4 +163,9 @@
 	opacity: 0.8;
 	word-break: break-word;
 	text-align: center;
+}
+
+.character .background img{
+    width:60px;
+padding-right:10px;
 }

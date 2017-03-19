@@ -169,6 +169,7 @@ var characters =
     ]
   }]
 $(document).ready(function(){
+	emojione.imageType = 'svg';
   for(i in characters)
     render_character(characters[i]).appendTo('body');
   $('.character .special').each(function(i, e){
@@ -184,14 +185,16 @@ render_character = function(chara){
   $card.append($("<div/>").addClass("background"));
 
   for(var i = 0; i < 60; i++)
-      $card.find(".background").append(chara.icon);
+      $card.find(".background").append(emojione.toImage(chara.icon));
 
-  $card.append($("<div/>").addClass("icon").text(chara.icon));
+  $card.append($("<div/>").addClass("icon").append(
+		emojione.toImage(chara.icon)
+  ));
 
   var $stats = $("<div/>").addClass("stats").appendTo($card);
   for(stat in chara.stats){
     var $stat = $("<div/>").appendTo($stats);
-    $stat.append( $("<span/>").addClass("stat_icon").text(stat));
+    $stat.append( $("<span/>").addClass("stat_icon").append(emojione.toImage(stat)));
     $stat.append(get_value_span(chara.stats[stat][0]));
     $stat.append(get_mod_span(chara.stats[stat][1]));
   }
