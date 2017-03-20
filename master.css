@@ -35,6 +35,15 @@ img.emojione{
 	--special-height:150px;
 	--stats-height:calc(var(--stats-height) - var(--special-height) );
 	--icon-width: calc(var(--card-width) - var(--stats-width));
+
+	--scale: 0.9;
+	--margin-scale: -0.05; 
+
+	transform: scale(var(--scale));
+	margin-right:calc(var(--margin-scale) * var(--card-width));
+	margin-left:calc(var(--margin-scale) * var(--card-width));
+	margin-top:calc(var(--margin-scale) * var(--card-height));
+	margin-bottom:calc(var(--margin-scale) * var(--card-height));
 }
 
 .character .attractiveness{
@@ -72,6 +81,7 @@ img.emojione{
 	border-right: solid gray 1px;
 }
 .character .stats img{
+	margin-left:3px;
 	width:100%;
 }
 .character .stats div span{

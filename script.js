@@ -167,6 +167,21 @@ var characters =
       "You lose 3 points if you are rejected, and lose 5 points if you reject your date",
       "You gain 2 points if the date ends without you using curse words such as “God”, “Jesus”, “Damn”, or any swear words"
     ]
+  },{
+    "icon":"😅",
+    "stats": {
+      "🎓": [ 0, 0],
+      "💪": [ 0, 0],
+      "👔": [ 0, 0],
+      "🥂": [-1, 0],
+      "💸": [+1, 0],
+      "💘": [+1, 0],
+      "👼": [ 0, 0]
+    },
+    "special": [
+      "You lose 3 points if you are rejected, and lose 5 points if you reject your date",
+	"If you go home with a single you gain 2 points for each stat they have at •"
+    ]
   }]
 $(document).ready(function(){
 	emojione.imageType = 'svg';
